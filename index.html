@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marco Pignataro | Front-end developer per agenzie, enti e imprese</title>
+<meta name="description" content="Siti, e-commerce e web app su misura. Front-end developer con 10 anni di esperienza: white-label per agenzie web, siti e strumenti digitali per enti del Terzo Settore, soluzioni per imprese. Certificato Adobe Front-end Expert.">
+<meta property="og:title" content="Marco Pignataro, front-end developer">
+<meta property="og:description" content="Siti, e-commerce e web app per agenzie, enti e imprese.">
+<meta property="og:image" content="img/marco.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314243B'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23FFC94D' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/sg-800.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Marco Pignataro – Front-end developer","areaServed":"IT","address":{"@type":"PostalAddress","addressLocality":"Messina","addressCountry":"IT"},"telephone":"+393336847657","email":"marco.pignataro92@gmail.com","sameAs":["https://linkedin.com/in/marco-pignataro/","https://github.com/marco-pignataro"]}
+</script>
+<style>
+@font-face{font-family:"SG";src:url(fonts/sg-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"SG";src:url(fonts/sg-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"SG";src:url(fonts/sg-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"SG";src:url(fonts/sg-800.woff2) format("woff2");font-weight:800;font-display:swap}
+
+:root{
+  --ink:#14243B; --ink-2:#4A5A70; --page:#F4F6F9; --paper:#FFFFFF; --line:#D8DEE7;
+  --cobalt:#2457C5; --cobalt-d:#1B449E; --marigold:#FFC94D; --wa:#1E8E4E; --r:10px;
+  --dark-line:#2E4363; --dark-text:#C9D5E4; --dark-soft:#AFC0D6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--page);color:var(--ink);font:400 17px/1.6 "SG",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--cobalt)}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:4px}
+[tabindex="-1"]:focus{outline:none}
+.wrap{max-width:1120px;margin:0 auto;padding-left:24px;padding-right:24px}
+@media (max-width:600px){.wrap{padding-left:16px;padding-right:16px}}
+
+/* top */
+.top{display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+.top nav a{margin-left:22px;color:var(--ink-2);text-decoration:none;font-weight:500;font-size:15px}
+.top nav a:hover{color:var(--ink)}
+@media (max-width:760px){.top nav a:not(.top-cta){display:none}}
+.top nav .top-cta{color:var(--cobalt)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font:700 16px/1 "SG",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:var(--cobalt);color:#fff}
+.btn-primary:hover{background:var(--cobalt-d)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{filter:brightness(.92)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center;padding-top:40px;padding-bottom:72px}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:36px;padding-top:20px;padding-bottom:56px}}
+.hero h1{font-weight:800;font-size:clamp(38px,5.4vw,64px);line-height:1.03;letter-spacing:-.035em;margin:0 0 22px;max-width:15ch}
+.hero .lead{font-size:clamp(17px,1.6vw,20px);color:var(--ink-2);max-width:32em;margin:0 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.note{font-size:15px;color:var(--ink-2);margin:0}
+.portrait{position:relative;max-width:400px}
+@media (max-width:900px){.portrait{max-width:300px}}
+.portrait img{border-radius:18px;width:100%;aspect-ratio:1;object-fit:cover}
+.portrait .status{position:absolute;left:16px;bottom:16px}
+.status{background:var(--marigold);color:var(--ink);font-weight:700;font-size:13px;padding:5px 10px;border-radius:6px;display:inline-block}
+
+/* proof */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-top:26px;padding-bottom:26px}
+.proof .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:14px 40px}
+.proof p{margin:0;color:var(--ink-2);font-size:15px}
+.proof ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 34px}
+.proof li{font-weight:800;font-size:22px;letter-spacing:-.02em}
+.cert{margin-left:auto;font-size:15px;font-weight:500;padding:8px 14px;border:1.5px solid var(--ink);border-radius:8px}
+@media (max-width:900px){.cert{margin-left:0}}
+
+/* blocks */
+.block{padding-top:88px;padding-bottom:88px}
+@media (max-width:600px){.block{padding-top:60px;padding-bottom:60px}}
+.block h2,.seg-head h2{font-weight:800;font-size:clamp(30px,3.6vw,42px);line-height:1.08;letter-spacing:-.025em;margin:0 0 14px;max-width:22ch}
+.intro{color:var(--ink-2);font-size:19px;max-width:36em;margin:0 0 44px}
+.dark{background:var(--ink);color:#E9EEF5}
+.dark .intro{color:var(--dark-soft)}
+
+/* picker: il momento chiave della pagina */
+.picker-wrap{padding-top:88px;padding-bottom:40px}
+@media (max-width:600px){.picker-wrap{padding-top:60px}}
+.picker{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.picker{grid-template-columns:1fr}}
+.pick{appearance:none;text-align:left;font:inherit;color:var(--ink);background:var(--paper);border:2px solid var(--line);border-radius:16px;padding:24px 24px 26px;cursor:pointer;display:flex;flex-direction:column;gap:8px;transition:border-color .15s,background .2s,color .2s,transform .15s}
+.pick:hover{border-color:var(--ink);transform:translateY(-2px)}
+.pick strong{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.pick span{color:var(--ink-2);font-size:16px}
+.pick[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff;transform:none}
+.pick[aria-pressed="true"] span{color:var(--dark-text)}
+.pick[aria-pressed="true"] strong::after{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--marigold);margin-left:10px;vertical-align:middle}
+.pick-hint{margin:22px 0 0;color:var(--ink-2);font-size:15px}
+.js .pick-hint.hidden{display:none}
+
+/* segmenti */
+.js .segment{display:none}
+.js .segment.active{display:block;animation:reveal .45s ease-out both}
+@keyframes reveal{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.seg-head{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:48px;padding-bottom:72px}
+@media (max-width:900px){.seg-head{grid-template-columns:1fr;gap:36px;padding-bottom:48px}}
+.seg-head .intro{margin-bottom:0}
+.seg-head .shot{border-radius:14px;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(20,36,59,.35);transform:rotate(1.2deg)}
+@media (max-width:900px){.seg-head .shot{transform:none}}
+
+/* ticket (agenzie) */
+.ticket{background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 30px 60px -30px rgba(20,36,59,.35);overflow:hidden;transform:rotate(1.2deg)}
+@media (max-width:900px){.ticket{transform:none}}
+.ticket-head{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+.ticket-key{font-weight:700;color:var(--ink)}
+.ticket-body{padding:20px}
+.ticket h3{font-size:21px;line-height:1.25;letter-spacing:-.01em;margin:0 0 18px}
+.fields{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px;margin:0 0 20px}
+.fields dt{color:var(--ink-2)}
+.fields dd{margin:0;font-weight:500}
+.assignee{display:flex;align-items:center;gap:10px}
+.assignee img{width:28px;height:28px;border-radius:50%}
+.comment{border-top:1px solid var(--line);padding-top:16px;display:flex;gap:12px;font-size:15px}
+.comment img{width:32px;height:32px;border-radius:50%;flex:none}
+.comment p{margin:0;background:var(--page);border-radius:10px;padding:10px 14px}
+.comment b{display:block;font-size:13px;color:var(--ink-2);font-weight:500;margin-bottom:2px}
+
+.needs{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+@media (max-width:800px){.needs{grid-template-columns:1fr;gap:26px}}
+.needs h3{font-size:20px;line-height:1.3;margin:0 0 8px;letter-spacing:-.01em}
+.needs p{margin:0;color:var(--ink-2)}
+.needs > div{border-top:3px solid var(--ink);padding-top:18px}
+
+.rows{border-top:1px solid var(--dark-line)}
+.row{display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:28px;padding:30px 0;border-bottom:1px solid var(--dark-line)}
+@media (max-width:760px){.row{grid-template-columns:1fr;gap:8px;padding:24px 0}}
+.row h3{margin:0;font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.02em;color:#fff;line-height:1.1}
+.row p{margin:0;color:var(--dark-text);max-width:40em}
+.row .tag{display:inline-block;margin-top:10px;font-size:14px;color:var(--marigold);font-weight:500}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.steps li{counter-increment:s;position:relative;padding-top:58px}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--paper);border:2px solid var(--ink);display:grid;place-items:center;font-weight:800;font-size:18px}
+.steps li:not(:last-child)::after{content:"";position:absolute;top:21px;left:52px;right:-18px;height:2px;background:var(--line)}
+@media (max-width:900px){.steps li::after{display:none}}
+.steps h3{margin:0 0 6px;font-size:19px}
+.steps p{margin:0;color:var(--ink-2);font-size:16px}
+.callout{margin-top:44px;background:var(--paper);border-left:4px solid var(--marigold);padding:20px 24px;border-radius:0 var(--r) var(--r) 0;max-width:46em}
+.callout p{margin:0}
+
+.modes{display:grid;grid-template-columns:repeat(3,1fr);background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+@media (max-width:800px){.modes{grid-template-columns:1fr}}
+.modes > div{padding:28px}
+.modes > div + div{border-left:1px solid var(--line)}
+@media (max-width:800px){.modes > div + div{border-left:0;border-top:1px solid var(--line)}}
+.modes h3{margin:0 0 8px;font-size:21px}
+.modes p{margin:0;color:var(--ink-2)}
+.modes .hl{background:var(--ink);color:#E9EEF5}
+.modes .hl h3{color:#fff}
+.modes .hl p{color:var(--dark-text)}
+.modes .hl strong{color:var(--marigold)}
+.small-note{margin:22px 0 0;color:var(--ink-2)}
+
+/* bandi: lista con spunte */
+.checks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:22px 48px;max-width:980px}
+@media (max-width:760px){.checks{grid-template-columns:1fr}}
+.checks li{padding-left:36px;position:relative;color:var(--dark-text)}
+.checks li strong{color:#fff;display:block;font-size:19px;margin-bottom:2px}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:22px;height:22px;border-radius:6px;background:var(--marigold)}
+.checks li::after{content:"";position:absolute;left:7px;top:8px;width:6px;height:11px;border:solid var(--ink);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+
+/* lavori */
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 28px}
+@media (max-width:900px){.works{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.works{grid-template-columns:1fr}}
+.work img{border-radius:12px;border:1px solid var(--line);aspect-ratio:16/10;object-fit:cover;width:100%;margin-bottom:14px}
+.work h3{margin:0 0 4px;font-size:19px}
+.work p{margin:0 0 6px;color:var(--ink-2);font-size:16px}
+.work a{font-weight:700;font-size:15px;text-underline-offset:3px}
+.work.wide{grid-column:span 2}
+@media (max-width:560px){.work.wide{grid-column:auto}}
+
+/* FAQ */
+.faq{max-width:780px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font-weight:700;font-size:19px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:16px;font-size:28px;font-weight:500;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 22px;color:var(--ink-2);max-width:40em}
+
+/* chi sono */
+.about{display:grid;grid-template-columns:1fr 1.6fr;gap:56px;align-items:start}
+@media (max-width:800px){.about{grid-template-columns:1fr;gap:18px}}
+.about p{max-width:36em;margin:0 0 16px}
+.links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:24px;font-weight:700}
+.links a{text-decoration-thickness:2px;text-underline-offset:4px}
+
+/* contatto */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:56px}
+@media (max-width:900px){.contact{grid-template-columns:1fr;gap:36px}}
+.direct{display:flex;flex-direction:column;gap:12px;margin-top:28px;align-items:flex-start}
+.direct a.plain{font-weight:700;color:#fff;text-decoration:none;font-size:18px}
+.direct a.plain:hover{text-decoration:underline}
+form{background:var(--paper);color:var(--ink);border-radius:14px;padding:30px}
+@media (max-width:600px){form{padding:22px}}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:560px){.row2{grid-template-columns:1fr}}
+label{display:block;font-weight:700;font-size:15px;margin-bottom:6px}
+.opt{font-weight:400;color:var(--ink-2)}
+.field{margin-bottom:18px}
+input,select,textarea{width:100%;font:400 16px/1.4 "SG",sans-serif;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:12px 14px}
+input:focus,select:focus,textarea:focus{border-color:var(--cobalt);outline:2px solid rgba(36,87,197,.25);outline-offset:0}
+textarea{min-height:130px;resize:vertical}
+.check{display:flex;gap:10px;align-items:flex-start;margin:4px 0 22px}
+.check input{width:20px;height:20px;margin:1px 0 0;flex:none;accent-color:var(--cobalt)}
+.check label{font-weight:400;font-size:14px;color:var(--ink-2);margin:0}
+.form-msg{margin:16px 0 0;font-weight:500;min-height:1.4em}
+.form-msg.ok{color:var(--wa)}
+.form-msg.err{color:#B3261E}
+.hp{position:absolute;left:-9999px}
+
+footer{padding-top:36px;padding-bottom:48px;color:var(--ink-2);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer details summary{cursor:pointer;text-decoration:underline}
+footer details p{max-width:44em;margin:10px 0 0}
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="brand" href="#">Marco Pignataro</a>
+  <nav aria-label="Sezioni">
+    <a href="#come-posso-aiutarti">Come posso aiutarti</a>
+    <a href="#chi-sono">Chi sono</a>
+    <a class="top-cta" href="#contatti">Contattami</a>
+  </nav>
+</header>
+
+<main>
+<!-- ================= SEZIONI COMUNI ================= -->
+<div class="wrap hero">
+  <div>
+    <h1>Siti, e-commerce e web app, sviluppati con dieci anni di mestiere.</h1>
+    <p class="lead">Sono Marco Pignataro, front-end developer a Messina. Lavoro con agenzie web, enti del Terzo Settore e imprese, da remoto in tutta Italia.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#come-posso-aiutarti">Scopri come posso aiutarti</a>
+      <a class="btn btn-ghost js-wa" href="https://wa.me/393336847657?text=Ciao%20Marco%2C%20ti%20scrivo%20dal%20tuo%20sito." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.5-.3Z"/></svg>
+        Scrivimi su WhatsApp</a>
+    </div>
+    <p class="note">Freelance con Partita IVA e certificato Adobe Front-end Expert.</p>
+  </div>
+  <div class="portrait">
+    <img src="img/marco.jpg" alt="Marco Pignataro" width="400" height="400">
+    <span class="status">Disponibile per nuovi progetti</span>
+  </div>
+</div>
+
+<div class="proof">
+  <div class="wrap">
+    <p>Ho lavorato su progetti per</p>
+    <ul aria-label="Brand">
+      <li>Primigi</li><li>Igi&amp;Co</li><li>Errea</li><li>Giunti Editore</li>
+    </ul>
+    <span class="cert">Certificato Adobe Front-end Expert</span>
+  </div>
+</div>
+
+<!-- ================= SCELTA DEL SEGMENTO ================= -->
+<section class="wrap picker-wrap" id="come-posso-aiutarti" aria-labelledby="h-pick">
+  <h2 id="h-pick" class="block-title" style="font-weight:800;font-size:clamp(30px,3.6vw,42px);line-height:1.08;letter-spacing:-.025em;margin:0 0 14px">Come posso aiutarti?</h2>
+  <p class="intro" style="margin-bottom:32px">Dimmi chi sei: ti mostro servizi, metodo e progetti pensati per te.</p>
+  <div class="picker" role="group" aria-label="Chi sei">
+    <button class="pick" type="button" data-seg="agenzie" aria-pressed="false" aria-controls="agenzie">
+      <strong>Sono un'agenzia web</strong>
+      <span>Ti serve un developer in più per i progetti dei tuoi clienti.</span>
+    </button>
+    <button class="pick" type="button" data-seg="enti" aria-pressed="false" aria-controls="enti">
+      <strong>Sono un ente o un'associazione</strong>
+      <span>Terzo Settore, cultura, formazione: sito, strumenti digitali, progetti a bando.</span>
+    </button>
+    <button class="pick" type="button" data-seg="imprese" aria-pressed="false" aria-controls="imprese">
+      <strong>Ho un'impresa</strong>
+      <span>Ti serve un sito, un e-commerce o uno strumento per lavorare meglio.</span>
+    </button>
+  </div>
+  <p class="pick-hint" id="pick-hint">Scegli un'opzione per vedere i dettagli.</p>
+</section>
+
+<!-- ================= SEGMENTO: AGENZIE ================= -->
+<div class="segment" id="agenzie" data-seg="agenzie">
+  <div class="wrap seg-head">
+    <div>
+      <h2 tabindex="-1">Un front-end developer senior nel tuo team, quando ti serve.</h2>
+      <p class="intro">Sviluppo in white-label su WordPress, Magento con Hyvä, Shopify, React e Next.js. Da 10 anni lavoro su e-commerce per brand come Primigi, Errea e Giunti Editore. Disponibile fino a 20 ore a settimana.</p>
+    </div>
+    <article class="ticket" aria-label="Esempio: un ticket della tua agenzia preso in carico">
+      <div class="ticket-head"><span class="ticket-key">ECOM-142</span><span class="status">In corso</span></div>
+      <div class="ticket-body">
+        <h3>Checkout Hyvä: nuovo step per la scelta della spedizione</h3>
+        <dl class="fields">
+          <dt>Progetto</dt><dd>E-commerce di un vostro cliente</dd>
+          <dt>Assegnato a</dt><dd class="assignee"><img src="img/marco-sm.jpg" alt="" width="28" height="28">Marco Pignataro</dd>
+          <dt>Stack</dt><dd>Magento 2, Hyvä, Tailwind, Alpine.js</dd>
+        </dl>
+        <div class="comment">
+          <img src="img/marco-sm.jpg" alt="" width="32" height="32">
+          <p><b>Marco</b>Preso in carico. Branch aperto sul vostro repository, aggiorno il ticket a fine giornata.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <section class="wrap block" style="padding-top:24px" aria-labelledby="h-ag-quando">
+    <h2 id="h-ag-quando">Quando ti serve un developer in più</h2>
+    <p class="intro">Senza assumere e senza formare nessuno: entro nel progetto, uso i vostri strumenti e consegno.</p>
+    <div class="needs">
+      <div><h3>Il team è già pieno</h3><p>Un picco di lavoro, una scadenza ravvicinata, un collega in ferie. Aggiungi capacità solo per il tempo che serve.</p></div>
+      <div><h3>Serve una competenza che non avete</h3><p>Un tema Hyvä, un front-end in Next.js, un negozio Shopify da personalizzare: tecnologie su cui lavoro da anni.</p></div>
+      <div><h3>Niente costi fissi</h3><p>Paghi il lavoro fatto, a progetto o a ore. Nessuna assunzione, nessun periodo di prova.</p></div>
+    </div>
+  </section>
+
+  <section class="block dark" aria-labelledby="h-ag-tec">
+    <div class="wrap">
+      <h2 id="h-ag-tec">Le tecnologie su cui lavoro</h2>
+      <p class="intro">Front-end di e-commerce, siti e web app, su progetti nuovi o già avviati.</p>
+      <div class="rows">
+        <div class="row"><h3>Magento 2 e Hyvä</h3><div><p>Temi Hyvä, personalizzazione di checkout, pagine prodotto e categorie, componenti front-end su Adobe Commerce.</p><span class="tag">Certificazione Adobe Front-end Expert (2022)</span></div></div>
+        <div class="row"><h3>Shopify</h3><div><p>Temi e sezioni personalizzate, componenti React integrati nel negozio, come per i progetti Giunti Editore.</p></div></div>
+        <div class="row"><h3>WordPress</h3><div><p>Temi e plugin su misura, siti istituzionali e per il Terzo Settore, versionamento con Git e deploy automatici.</p></div></div>
+        <div class="row"><h3>React e Next.js</h3><div><p>Front-end di e-commerce e web app, componenti riusabili e documentati con Storybook, TypeScript.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block" aria-labelledby="h-ag-come">
+    <h2 id="h-ag-come">Come lavoriamo insieme</h2>
+    <p class="intro">Abituato ai ritmi di agenzia: ci ho lavorato per quasi dieci anni, tra ticket, sprint e revisioni.</p>
+    <ol class="steps">
+      <li><h3>Una call di 20 minuti</h3><p>Mi racconti progetto, scadenze e strumenti che usate.</p></li>
+      <li><h3>Stima e preventivo</h3><p>Ricevi tempi e costi prima di iniziare, senza impegno.</p></li>
+      <li><h3>Sviluppo nei vostri strumenti</h3><p>Lavoro sul vostro repository e sulla vostra board: Jira, GitLab, Bitbucket, GitHub.</p></li>
+      <li><h3>Consegna e revisione</h3><p>Codice pulito e documentato, revisionato con il vostro team.</p></li>
+    </ol>
+    <div class="callout"><p><strong>In white-label.</strong> Lavoro sotto il vostro marchio: il cliente finale parla con voi, non con me.</p></div>
+  </section>
+
+  <section class="wrap block" style="padding-top:0" aria-labelledby="h-ag-formule">
+    <h2 id="h-ag-formule">Tre modi per collaborare</h2>
+    <p class="intro">Scegliamo insieme la formula più adatta al progetto.</p>
+    <div class="modes">
+      <div><h3>A progetto</h3><p>Un tema, un sito o una funzionalità con perimetro definito e un prezzo concordato prima di partire.</p></div>
+      <div><h3>A pacchetto di ore</h3><p>Per manutenzione, piccoli sviluppi e richieste ricorrenti dei vostri clienti.</p></div>
+      <div class="hl"><h3>Continuativa</h3><p>Come estensione del vostro team, <strong>fino a 20 ore a settimana</strong>, con disponibilità da concordare.</p></div>
+    </div>
+    <p class="small-note">Il preventivo è gratuito e arriva dopo la prima call.</p>
+  </section>
+
+  <section class="wrap block" style="padding-top:0" aria-labelledby="h-ag-faq">
+    <h2 id="h-ag-faq">Domande frequenti</h2>
+    <div class="faq">
+      <details><summary>Lavori in white-label?</summary><p>Sì. Lavoro sotto il vostro marchio e non contatto i vostri clienti. Se serve, firmo un accordo di riservatezza.</p></details>
+      <details><summary>Quanto costa?</summary><p>Dipende dal perimetro e dai tempi. Dopo una call di 20 minuti ricevi un preventivo a progetto o a ore, gratuito e senza impegno.</p></details>
+      <details><summary>Quando puoi iniziare?</summary><p>Dipende dal carico del momento: te lo dico già nella prima call, insieme alle ore settimanali che posso dedicarti.</p></details>
+      <details><summary>Lavori da remoto?</summary><p>Sì, da Messina, con agenzie di tutta Italia. Mi adatto ai vostri orari, canali e strumenti.</p></details>
+      <details><summary>Come fatturi?</summary><p>Con Partita IVA, a progetto, a pacchetto di ore o a consuntivo mensile.</p></details>
+    </div>
+  </section>
+</div>
+
+<!-- ================= SEGMENTO: ENTI ================= -->
+<div class="segment" id="enti" data-seg="enti">
+  <div class="wrap seg-head">
+    <div>
+      <h2 tabindex="-1">Siti e strumenti digitali per enti e associazioni.</h2>
+      <p class="intro">Dal 2023 coordino la comunicazione di un ente del Terzo Settore. Conosco i budget ridotti, il lavoro con i volontari, i bandi e le loro scadenze.</p>
+    </div>
+    <img class="shot" src="img/puliamo.jpg" alt="Home page del sito di Puli-AMO Messina" width="800" height="500" loading="lazy">
+  </div>
+
+  <section class="wrap block" style="padding-top:24px" aria-labelledby="h-en-cosa">
+    <h2 id="h-en-cosa">Cosa posso fare per voi</h2>
+    <p class="intro">Strumenti pensati per chi ha poco tempo e tante persone da coinvolgere.</p>
+    <div class="needs">
+      <div><h3>Un sito che aggiornate da soli</h3><p>Su WordPress, semplice da gestire, con una formazione pratica per staff e volontari.</p></div>
+      <div><h3>Strumenti per organizzarvi</h3><p>Gestionali per soci, volontari ed eventi, moduli di iscrizione e aree riservate.</p></div>
+      <div><h3>Comunicare progetti e risultati</h3><p>Siti di progetto, mappe interattive, pagine per raccolte fondi e 5x1000.</p></div>
+    </div>
+  </section>
+
+  <section class="block dark" aria-labelledby="h-en-bandi">
+    <div class="wrap">
+      <h2 id="h-en-bandi">Il digitale dentro il tuo progetto finanziato</h2>
+      <p class="intro">Se il sito o la piattaforma fanno parte di un bando, lavoro con le sue regole e i suoi tempi.</p>
+      <ul class="checks">
+        <li><strong>Preventivi per il piano dei costi</strong>Voci chiare e dettagliate, da inserire nella candidatura.</li>
+        <li><strong>Consegne allineate al bando</strong>Lavoro per fasi, rispettando scadenze e attività previste dal progetto.</li>
+        <li><strong>Documentazione per la rendicontazione</strong>Fatture e materiali utili a dimostrare il lavoro svolto.</li>
+        <li><strong>Workshop e formazione</strong>Come per Spazio Pubblico Resiliente, finanziato dalla Regione Sicilia, dove ho tenuto 3 workshop su web design e WordPress.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap block" aria-labelledby="h-en-lavori">
+    <h2 id="h-en-lavori">Alcuni lavori</h2>
+    <p class="intro">Siti realizzati per enti, associazioni e progetti del territorio.</p>
+    <div class="works">
+      <article class="work wide"><img src="img/spr.jpg" alt="Sito del progetto Spazio Pubblico Resiliente" width="800" height="500" loading="lazy"><h3>Spazio Pubblico Resiliente</h3><p>Sito di un progetto finanziato dalla Regione Sicilia, con mappa interattiva e percorso di co-progettazione in quattro fasi.</p><a href="https://spaziopubblicome.it" target="_blank" rel="noopener">Visita il sito</a></article>
+      <article class="work"><img src="img/bussola.jpg" alt="Mappa interattiva della Bussola della Partecipazione" width="800" height="500" loading="lazy"><h3>La Bussola della Partecipazione</h3><p>Mappa interattiva della città per la partecipazione attiva.</p><a href="http://labussoladellapartecipazione.it" target="_blank" rel="noopener">Visita il sito</a></article>
+      <article class="work"><img src="img/cesv.jpg" alt="Home page del sito del CESV Messina" width="800" height="500" loading="lazy"><h3>CESV Messina</h3><p>Sito del Centro di servizio per il volontariato.</p><a href="https://www.cesvmessina.it" target="_blank" rel="noopener">Visita il sito</a></article>
+      <article class="work"><img src="img/afel.jpg" alt="Home page del sito di AFEL Accademia Formazione e Lavoro" width="800" height="500" loading="lazy"><h3>AFEL Accademia Formazione e Lavoro</h3><p>Sito di un ente di formazione accreditato dalla Regione Sicilia.</p><a href="https://www.afelformazione.it" target="_blank" rel="noopener">Visita il sito</a></article>
+      <article class="work"><img src="img/puliamo.jpg" alt="Home page del sito di Puli-AMO Messina" width="800" height="500" loading="lazy"><h3>Puli-AMO Messina</h3><p>Sito dell'associazione: progetti, eventi, volontariato e 5x1000.</p><a href="https://puliamomessina.it" target="_blank" rel="noopener">Visita il sito</a></article>
+    </div>
+  </section>
+
+  <section class="wrap block" style="padding-top:0" aria-labelledby="h-en-come">
+    <h2 id="h-en-come">Come lavoriamo insieme</h2>
+    <p class="intro">Un percorso semplice, con una sola persona di riferimento dall'inizio alla fine.</p>
+    <ol class="steps">
+      <li><h3>Una call conoscitiva</h3><p>Mi raccontate l'ente, le attività e cosa vi serve.</p></li>
+      <li><h3>Proposta e preventivo</h3><p>Chiari e dettagliati, anche da allegare a un bando.</p></li>
+      <li><h3>Realizzazione</h3><p>Vi aggiorno a ogni fase e raccolgo i vostri riscontri.</p></li>
+      <li><h3>Formazione e supporto</h3><p>Vi insegno a gestire il sito in autonomia.</p></li>
+    </ol>
+  </section>
+
+  <section class="wrap block" style="padding-top:0" aria-labelledby="h-en-faq">
+    <h2 id="h-en-faq">Domande frequenti</h2>
+    <div class="faq">
+      <details><summary>Puoi aiutarci a inserire il sito in un progetto a bando?</summary><p>Sì. Preparo un preventivo con voci dettagliate da inserire nel piano dei costi e organizzo il lavoro sulle fasi del progetto.</p></details>
+      <details><summary>Potremo aggiornare il sito da soli?</summary><p>Sì. Uso strumenti semplici da gestire e alla consegna vi formo, anche con volontari che non hanno esperienza.</p></details>
+      <details><summary>Quanto costa?</summary><p>Dipende da cosa vi serve. Dopo una prima call ricevete un preventivo gratuito e senza impegno, pensato sul vostro budget.</p></details>
+      <details><summary>Lavori anche fuori Messina?</summary><p>Sì, lavoro da remoto con enti di tutta Italia.</p></details>
+      <details><summary>Fatturi a enti del Terzo Settore e pubbliche amministrazioni?</summary><p>Sì, con Partita IVA e fattura elettronica.</p></details>
+    </div>
+  </section>
+</div>
+
+<!-- ================= SEGMENTO: IMPRESE ================= -->
+<div class="segment" id="imprese" data-seg="imprese">
+  <div class="wrap seg-head" style="grid-template-columns:1fr">
+    <div>
+      <h2 tabindex="-1">Strumenti digitali che fanno lavorare meglio la tua impresa.</h2>
+      <p class="intro">Un sito che porta clienti, un e-commerce, un gestionale su misura o un'automazione con l'intelligenza artificiale. Ti spiego tutto senza tecnicismi e ti propongo solo quello che serve davvero.</p>
+    </div>
+  </div>
+
+  <section class="block dark" aria-labelledby="h-im-servizi">
+    <div class="wrap">
+      <h2 id="h-im-servizi">Cosa posso realizzare per te</h2>
+      <p class="intro">Le stesse competenze usate per brand nazionali, su misura per un'impresa locale.</p>
+      <div class="rows">
+        <div class="row"><h3>Sito web</h3><div><p>Vetrina o istituzionale, veloce, facile da aggiornare e pensato per farti trovare su Google.</p></div></div>
+        <div class="row"><h3>E-commerce</h3><div><p>Shopify, WordPress o Magento, in base al catalogo e al budget. Esperienza su negozi di brand come Primigi ed Errea.</p></div></div>
+        <div class="row"><h3>Gestionali e web app</h3><div><p>Strumenti su misura per gestire ordini, prenotazioni, clienti o magazzino, accessibili da computer e smartphone.</p></div></div>
+        <div class="row"><h3>Automazioni e AI</h3><div><p>Assistenti AI e automazioni per le attività ripetitive: risposte ai clienti, raccolta di dati, preparazione di documenti.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block" aria-labelledby="h-im-come">
+    <h2 id="h-im-come">Come lavoriamo insieme</h2>
+    <p class="intro">Un solo referente, tempi chiari, nessuna sorpresa in fattura.</p>
+    <ol class="steps">
+      <li><h3>Una call di 20 minuti</h3><p>Mi racconti l'attività e cosa vorresti migliorare.</p></li>
+      <li><h3>Proposta chiara</h3><p>Cosa realizzo, in quanto tempo e a che costo, prima di iniziare.</p></li>
+      <li><h3>Sviluppo</h3><p>Ti aggiorno a ogni passaggio e ti mostro i progressi.</p></li>
+      <li><h3>Consegna e formazione</h3><p>Ti spiego come usare quello che ho realizzato.</p></li>
+    </ol>
+  </section>
+
+  <section class="wrap block" style="padding-top:0" aria-labelledby="h-im-faq">
+    <h2 id="h-im-faq">Domande frequenti</h2>
+    <div class="faq">
+      <details><summary>Quanto costa un sito o un e-commerce?</summary><p>Dipende da cosa ti serve. Dopo una call di 20 minuti ricevi un preventivo gratuito e senza impegno.</p></details>
+      <details><summary>Potrò aggiornarlo da solo?</summary><p>Sì. Alla consegna ti spiego come modificare testi, foto e prodotti in autonomia.</p></details>
+      <details><summary>Cosa può fare l'intelligenza artificiale per la mia impresa?</summary><p>Ne parliamo nella prima call: ti propongo un'automazione solo se ti fa risparmiare tempo davvero.</p></details>
+      <details><summary>Lavori solo a Messina?</summary><p>No, lavoro da remoto con imprese di tutta Italia. A Messina possiamo anche incontrarci di persona.</p></details>
+    </div>
+  </section>
+</div>
+
+<!-- ================= SEZIONI COMUNI ================= -->
+<section class="wrap block about" id="chi-sono" aria-labelledby="h-chi">
+  <h2 id="h-chi">Chi sono</h2>
+  <div>
+    <p>Front-end developer a Messina. Per quasi dieci anni ho lavorato in Synthetic Lab, un'agenzia web, sviluppando in outsourcing e-commerce Magento, Shopify e React per brand nazionali come Primigi, Igi&amp;Co, Errea e Giunti Editore.</p>
+    <p>Dal 2025 lavoro da freelance con agenzie, enti e imprese, e insegno informatica all'ITS Academy A. Volta. Dal 2023 coordino la comunicazione di Puli-AMO Messina, un ente del Terzo Settore.</p>
+    <div class="links">
+      <a href="cv-marco-pignataro.pdf">Scarica il CV</a>
+      <a href="https://linkedin.com/in/marco-pignataro/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/marco-pignataro" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section class="block dark" id="contatti" aria-labelledby="h-contatti">
+  <div class="wrap contact">
+    <div>
+      <h2 id="h-contatti">Raccontami il progetto</h2>
+      <p class="intro" id="contact-intro">Bastano due righe su cosa ti serve e quando. Ti rispondo per fissare una call.</p>
+      <div class="direct">
+        <a class="btn btn-wa js-wa" href="https://wa.me/393336847657?text=Ciao%20Marco%2C%20ti%20scrivo%20dal%20tuo%20sito." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.5-.3Z"/></svg>
+          Scrivimi su WhatsApp</a>
+        <a class="plain" href="mailto:marco.pignataro92@gmail.com">marco.pignataro92@gmail.com</a>
+        <a class="plain" href="tel:+393336847657">+39 333 6847657</a>
+      </div>
+    </div>
+
+    <form id="form" novalidate>
+      <!-- Web3Forms: sostituisci il valore con la tua access key (web3forms.com). Finché non lo fai, il modulo apre una mail precompilata. -->
+      <input type="hidden" name="access_key" value="INSERISCI_LA_TUA_ACCESS_KEY">
+      <input type="hidden" name="subject" value="Nuova richiesta dal sito">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row2">
+        <div class="field"><label for="f-nome">Nome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
+        <div class="field"><label for="f-org">Organizzazione <span class="opt">(facoltativo)</span></label><input id="f-org" name="organizzazione" autocomplete="organization"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-tel">Telefono <span class="opt">(facoltativo)</span></label><input id="f-tel" name="telefono" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="f-chi">Chi sei</label>
+        <select id="f-chi" name="chi_sei">
+          <option value="agenzie">Un'agenzia web</option>
+          <option value="enti">Un ente o un'associazione</option>
+          <option value="imprese">Un'impresa</option>
+          <option value="altro" selected>Altro</option>
+        </select>
+      </div>
+      <div class="field"><label for="f-msg">Di cosa hai bisogno</label><textarea id="f-msg" name="messaggio" placeholder="Cosa ti serve, entro quando" required></textarea></div>
+      <div class="check"><input id="f-privacy" type="checkbox" name="privacy" required><label for="f-privacy">Acconsento al trattamento dei dati per ricevere una risposta, come descritto nell'<a href="#privacy">informativa privacy</a>.</label></div>
+      <button class="btn btn-primary" type="submit">Invia la richiesta</button>
+      <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Marco Pignataro, Messina. P.IVA <!-- INSERISCI P.IVA -->00000000000</span>
+    <details id="privacy">
+      <summary>Informativa privacy</summary>
+      <p>Titolare del trattamento è Marco Pignataro (marco.pignataro92@gmail.com). I dati inviati con il modulo servono solo a rispondere alla tua richiesta e non sono ceduti a terzi; l'invio passa dal servizio Web3Forms. Questa pagina non usa cookie né strumenti di tracciamento. Puoi chiedere in ogni momento accesso, rettifica o cancellazione dei tuoi dati scrivendo all'indirizzo indicato (Reg. UE 2016/679).</p>
+    </details>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var SEG = {
+    agenzie:{wa:'Ciao Marco, ti scrivo per conto di un\'agenzia web.', ph:'Progetto, tecnologia, scadenza, ore stimate'},
+    enti:{wa:'Ciao Marco, ti scrivo per conto di un ente/associazione.', ph:'Chi siete, cosa vi serve, eventuale bando e scadenza'},
+    imprese:{wa:'Ciao Marco, ho un\'impresa e vorrei parlarti di un progetto.', ph:'La tua attività e cosa ti serve'}
+  };
+  var picks=[].slice.call(document.querySelectorAll('.pick'));
+  var segs=[].slice.call(document.querySelectorAll('.segment'));
+  var hint=document.getElementById('pick-hint');
+  var sel=document.getElementById('f-chi'), msgField=document.getElementById('f-msg');
+  var waDefault='Ciao Marco, ti scrivo dal tuo sito.';
+
+  function setWa(text){
+    [].forEach.call(document.querySelectorAll('.js-wa'),function(a){a.href='https://wa.me/393336847657?text='+encodeURIComponent(text)});
+  }
+  function choose(id, scroll){
+    if(!SEG[id]) return;
+    picks.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.seg===id ? 'true':'false')});
+    segs.forEach(function(s){s.classList.toggle('active', s.dataset.seg===id)});
+    hint.classList.add('hidden');
+    sel.value=id; msgField.placeholder=SEG[id].ph; setWa(SEG[id].wa);
+    try{history.replaceState(null,'','#per-'+id)}catch(e){}
+    if(scroll){
+      var h=document.querySelector('#'+id+' h2');
+      h.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth', block:'start'});
+      h.focus({preventScroll:true});
+    }
+  }
+  picks.forEach(function(b){b.addEventListener('click',function(){choose(b.dataset.seg,true)})});
+  sel.addEventListener('change',function(){ if(SEG[sel.value]){ msgField.placeholder=SEG[sel.value].ph; setWa(SEG[sel.value].wa);} });
+
+  // link diretti per la prospezione: tuosito/#per-agenzie, #per-enti, #per-imprese
+  var m=location.hash.match(/^#per-(agenzie|enti|imprese)$/);
+  if(m) choose(m[1], false); else setWa(waDefault);
+
+  // modulo
+  var form=document.getElementById('form'), out=document.getElementById('form-msg');
+  form.addEventListener('submit',function(e){
+    e.preventDefault(); out.className='form-msg'; out.textContent='';
+    if(!form.checkValidity()){
+      var bad=form.querySelector(':invalid'); bad.focus(); out.className='form-msg err';
+      out.textContent = bad.type==='checkbox' ? 'Per inviare la richiesta serve il consenso privacy.' : 'Compila i campi obbligatori: nome, email e messaggio.';
+      return;
+    }
+    var d=new FormData(form), key=d.get('access_key');
+    if(!key || key.indexOf('INSERISCI')===0){
+      var body='Nome: '+d.get('nome')+'\nOrganizzazione: '+(d.get('organizzazione')||'-')+'\nEmail: '+d.get('email')+'\nTelefono: '+(d.get('telefono')||'-')+'\nChi sei: '+sel.options[sel.selectedIndex].text+'\n\n'+d.get('messaggio');
+      location.href='mailto:marco.pignataro92@gmail.com?subject='+encodeURIComponent('Richiesta dal sito')+'&body='+encodeURIComponent(body);
+      return;
+    }
+    var btn=form.querySelector('button'); btn.disabled=true; btn.textContent='Invio in corso…';
+    fetch('https://api.web3forms.com/submit',{method:'POST',body:d})
+      .then(function(r){return r.json()})
+      .then(function(j){ if(j.success){form.reset(); out.className='form-msg ok'; out.textContent='Richiesta inviata. Ti rispondo per fissare la call.';} else throw 0; })
+      .catch(function(){out.className='form-msg err'; out.textContent='Invio non riuscito. Scrivimi a marco.pignataro92@gmail.com o su WhatsApp.';})
+      .finally(function(){btn.disabled=false; btn.textContent='Invia la richiesta';});
+  });
+})();
+</script>
+</body>
+</html>
