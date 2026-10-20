@@ -110,7 +110,7 @@ img{max-width:100%;display:block}
 .seg-head{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:48px;padding-bottom:72px}
 @media (max-width:900px){.seg-head{grid-template-columns:1fr;gap:36px;padding-bottom:48px}}
 .seg-head .intro{margin-bottom:0}
-.seg-head .shot{border-radius:14px;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(20,36,59,.35);transform:rotate(1.2deg)}
+.seg-head .shot{border-radius:14px;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(20,36,59,.35);transform:rotate(1.2deg);width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top}
 @media (max-width:900px){.seg-head .shot{transform:none}}
 
 /* ticket (agenzie) */
@@ -180,7 +180,7 @@ img{max-width:100%;display:block}
 .works{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 28px}
 @media (max-width:900px){.works{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.works{grid-template-columns:1fr}}
-.work img{border-radius:12px;border:1px solid var(--line);aspect-ratio:16/10;object-fit:cover;width:100%;margin-bottom:14px}
+.work img{border-radius:12px;border:1px solid var(--line);width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;margin-bottom:14px}
 .work h3{margin:0 0 4px;font-size:19px}
 .work p{margin:0 0 6px;color:var(--ink-2);font-size:16px}
 .work a{font-weight:700;font-size:15px;text-underline-offset:3px}
